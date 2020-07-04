@@ -1,0 +1,401 @@
+/* Fonts */
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Almarai Bold'), local('Almarai-Bold'), url(https://fonts.gstatic.com/s/almarai/v2/tssoApxBaigK_hnnS-agtnqWo572.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local('Almarai ExtraBold'), local('Almarai-ExtraBold'), url(https://fonts.gstatic.com/s/almarai/v2/tssoApxBaigK_hnnS_qjtnqWo572.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Kanit Medium'), local('Kanit-Medium'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr5mOBWnVaE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    font-family: 'Almarai', sans-serif;;
+    font-size: 16px;
+}
+
+.main-content {
+    position: relative;
+    top: 4rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    background-color: #3c3939;
+    border: none;
+    color: white;
+    padding: 8px 0px;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    height: 64px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+header .logo {
+    flex: 1;
+    vertical-align: bottom;
+    font-weight: 500;
+    color: grey;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.35rem;
+}
+
+header .logo span {
+    color: black;
+}
+
+header .icon {
+    width: 2rem;
+    padding-right: .5rem;
+}
+
+header nav ul {
+    display: flex;
+    font-family: 'Almarai', sans-serif;
+}
+
+nav li {
+    padding-left: 1rem;
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+#sign-up-section {
+    display: flex;
+    background-color: #cccccc;
+    align-items: center;
+}
+.sign-photo {
+    padding: 2rem 1.5rem;
+    flex-basis: 60%;
+}
+
+.sign-photo img{
+    width: 100%;
+}
+
+.sign-up {
+    text-align: left;
+    flex-basis: 30%;
+    line-height: 40px;
+    padding-right: 24px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.sign-up h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3c3939;
+    padding-bottom: 32px;
+}
+
+.sign-up p {
+    font-size: 1.5rem;
+}
+
+#blog-section {
+    display: flex;
+    background-color: #f5f5f5;
+    font-family: 'Almarai', sans-serif;
+}
+
+#blog-section a{
+    color: blue;
+}
+
+.blog-feature {
+    flex-basis: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid grey;
+}
+
+.blog-feature img {
+    width: 100%;
+}
+
+.blog-feature h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3c3939;
+}
+
+.blog-feature p {
+    margin-top: 1.5rem;
+}
+
+.blog-sidebar {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.sidebar-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #808080;
+}
+
+.sidebar-photo {
+    flex-basis: 35%;
+    padding-right: 1rem;
+}
+
+.sidebar-photo img {
+    height: auto;
+    width: 100%;
+}
+
+.sidebar-text {
+    flex-basis: 65%;
+}
+
+.sidebar-text h3{
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #3c3939;
+}
+
+.sidebar-text h4 {
+    margin: 0.5rem 0;
+}
+
+#learning-section {
+    background-color: silver;
+    padding-bottom: 32px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.learning-header {
+    padding-top: 32px;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #3c3939;
+}
+
+.learning-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 72px;
+}
+
+.learning {
+    margin-top: 32px;
+    background-color: #fcfcfc;
+    width: 32%;
+}
+
+.learning .content {
+    text-align: left;
+    padding: 16px;
+    color: #808080;
+}
+
+.learning h2 {
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #3c3939;
+}
+
+.learning h3 {
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+.learning img {
+    width: 100%;
+}
+#exhibit-section {
+    background-color: #f5f5f5;
+    font-family: 'Almarai', sans-serif;
+}
+
+.exhibit-header {
+    padding-top: 32px;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #3c3939;
+}
+
+.exhibit-tabs {
+    display: flex;
+}
+
+.exhibit-feature {
+    flex-basis: 60%;
+    padding: 32px 24px;
+    color: #808080;
+}
+
+.exhibit-feature video {
+    width: 100%;
+}
+
+.exhibit-feature h2 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #3c3939;
+}
+
+.exhibit-sidebar {
+    flex-basis: 40%;
+    padding-top: 16px;
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+
+footer .content {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    font-family: 'Almarai', sans-serif;
+}
+
+footer p {
+    flex: 1;
+}
+
+footer nav ul {
+    display: flex;
+    font-family: 'Almarai', sans-serif;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+
+    footer .content{
+        border-top: solid 1px #d9d9d9;
+    }
+}
+
+@media (max-width: 769px) {
+    .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header nav ul li {
+        flex: 1;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    header .content {
+        padding: 1rem 0;
+    }
+
+    #sign-up-section {
+        display: block;
+    }
+
+    .sign-photo {
+        padding: 0;
+    }
+
+    .sign-up {
+        padding: 32px 16px;
+    }
+
+    .blog-sidebar {
+        flex-basis: 100%;
+    }
+
+    .sidebar-container {
+        display: block;
+    }
+
+    .sidebar-photo {
+        padding: 0;
+    }
+
+    .sidebar-text {
+        padding: 16px;
+    }
+
+    #learning-section {
+        padding-bottom: 24px;
+        background-color: #f5f5f5;
+    }
+
+    .learning-header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .learning-tabs {
+        padding: 0 16px;
+    }
+
+    .learning-tabs .button {
+        margin-bottom: 8px;
+        text-align: left;
+        padding: 16px 0 16px 16px;
+        background-color: #c1bdbd;
+        font-family: 'Almarai', sans-serif;
+        font-weight: 700;
+        color: #3c3939;
+    }
+
+    .exhibit-feature {
+        flex-basis: 100%;
+        padding: 16px 0 24px 0;
+    }
+}
